@@ -19,6 +19,6 @@ Lists all local branches with numbers for simple deleting without having to list
 # Usage
 * Check out this repo into your Linux home dir
 * ensure all scripts have execute rights
-* add this to your `.bashrc`
+* add the following to your `.bashrc` and reload:
 
 ```~/git-utils/load-git-command-aliases.sh```
