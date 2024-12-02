@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPT_DIR=$(dirname "$(realpath "$0")")
+SCRIPT_DIR=$(dirname "$(realpath "${BASH_SOURCE[0]}")")
 
 echo "Loading git-utils command aliases from $SCRIPT_DIR"
 echo "   (https://github.com/peterlanoie/git-utils)"

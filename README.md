@@ -21,4 +21,4 @@ Lists all local branches with numbers for simple deleting without having to list
 * ensure all scripts have execute rights
 * add the following to your `.bashrc` and reload:
 
-```~/git-utils/load-git-command-aliases.sh```
+```source ~/git-utils/load-git-command-aliases.sh```
