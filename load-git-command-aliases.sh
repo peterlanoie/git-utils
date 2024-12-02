@@ -16,7 +16,11 @@ alias gl='git log'
 alias gls='git log --oneline --decorate "$@"'
 alias gll='git log --stat --pretty=short --graph "$@"'
 
+# Makes a commit with no content to provide an obvious bookmark for rebasing
+# This is useful when you have a series of commits that contribute to multiple PRs that you need 
+# to rebase before each separate PR
+alias bkm='timestamp=$(date +"%Y-%m-%d-%H-%M-%S") && git commit --no-verify --message ">>>> git bookmark - rebase to commits from below this - $timestamp <<<<" --allow-empty'
+
 # Utility scripts
-alias gbc='$SCRIPT_DIR/git-branch-checkout.sh'
-alias gbd='$SCRIPT_DIR/git-branch-delete.sh'
-alias bkm='$SCRIPT_DIR/create-git-bookmark.sh'
+alias gbc="$SCRIPT_DIR/git-branch-checkout.sh"
+alias gbd="$SCRIPT_DIR/git-branch-delete.sh"
