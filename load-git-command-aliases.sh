@@ -2,6 +2,9 @@
 
 SCRIPT_DIR=$(dirname "$(realpath "$0")")
 
+echo "Loading git-utils command aliases from $SCRIPT_DIR"
+echo "   (https://github.com/peterlanoie/git-utils)"
+
 # General helpers for existing git commands
 alias gc='git checkout "$@"'
 alias gcm='git checkout main'
@@ -17,4 +20,3 @@ alias gll='git log --stat --pretty=short --graph "$@"'
 alias gbc='$SCRIPT_DIR/git-branch-checkout.sh'
 alias gbd='$SCRIPT_DIR/git-branch-delete.sh'
 alias bkm='$SCRIPT_DIR/create-git-bookmark.sh'
-

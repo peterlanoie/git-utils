@@ -17,7 +17,7 @@ Lists all local branches with numbers for simple checkout without having to list
 Lists all local branches with numbers for simple deleting without having to list them, copy and paste, etc.
 
 # Usage
-* Check out this repo into your Linux home dir
+* Check out this repo into your Linux home dir (defaults to `git-utils`)
 * ensure all scripts have execute rights
 * add the following to your `.bashrc` and reload:
 
