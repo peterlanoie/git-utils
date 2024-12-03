@@ -10,18 +10,20 @@ while IFS= read -r line; do
 done <<< "$branches"
 
 # List branches with numbers
-echo "Available branches:"
+echo ""
+echo "Git branch checkout:"
 for i in "${!branch_array[@]}"; do
     echo "$((i + 1))) ${branch_array[$i]}"
 done
-echo "q) Quit"
+echo "[q] / [ENTER] to exit"
+echo ""
 
 # Prompt the user for input
-read -p "Enter the number of the branch to check out: " branch_number
+read -p "Branch #: " branch_number
 
 # Handle "q" to quit
-if [ "$input" == "q" ]; then
-    echo "Exiting the script. Goodbye!"
+if [ "$branch_number" == "q" ] || [ "$branch_number" == "" ]; then
+#    echo "Exiting the script. Goodbye!"
     exit 0
 fi
 
