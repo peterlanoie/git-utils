@@ -15,6 +15,7 @@ alias gpm='git pull origin main'
 alias gl='git log'
 alias gls='git log --oneline --decorate "$@"'
 alias gll='git log --stat --pretty=short --graph "$@"'
+alias grp='git remote prune origin'
 
 # Makes a commit with no content to provide an obvious bookmark for rebasing
 # This is useful when you have a series of commits that contribute to multiple PRs that you need 
