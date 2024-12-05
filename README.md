@@ -17,7 +17,7 @@ Simple shortcuts to streamline regular git commands.
 * `gll`: `git log --stat --pretty=short --graph "$@"` (takes additional args)
 * `grp`: `git remote prune origin`
 
-See the [load script](load-git-command-aliases.sh) for complete details.
+See the [load script](linux/load-git-command-aliases.sh) for complete details.
 
 ## Utility scripts
 Scripts for slightly more complex operations
@@ -33,11 +33,13 @@ Lists all local branches with numbers for simple deleting without having to list
 ![](docs/git-utils-delete.gif)
 
 # Usage
+
+## Linux
 * Check out this repo into your Linux home dir (defaults to `git-utils`)
 * ensure all scripts have execute rights
 
-  ```chmod +x ~/git-utils/*.sh```
+  ```chmod +x ~/git-utils/linux/*.sh```
 
 * add the following to your `.bashrc` and reload:
 
-  ```source ~/git-utils/load-git-command-aliases.sh```
+  ```source ~/git-utils/linux/load-git-command-aliases.sh```
