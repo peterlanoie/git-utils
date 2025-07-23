@@ -35,7 +35,7 @@ Lists all local branches with numbers for simple deleting without having to list
 # Usage
 
 ## Linux
-* Check out this repo into your Linux home dir (defaults to `git-utils`)
+* Clone this repo into your Linux home dir (defaults to `git-utils`)
 * ensure all scripts have execute rights
 
   ```chmod +x ~/git-utils/linux/*.sh```
