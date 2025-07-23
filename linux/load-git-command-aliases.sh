@@ -1,8 +1,8 @@
 #!/bin/bash
 
-SCRIPT_DIR=$(dirname "$(realpath "${BASH_SOURCE[0]}")")
+GIT_ALIASES_SCRIPT_DIR=$(dirname "$(realpath "${BASH_SOURCE[0]}")")
 
-echo "Loading git-utils command aliases from $SCRIPT_DIR"
+echo "Loading git-utils command aliases from $GIT_ALIASES_SCRIPT_DIR"
 echo "   (https://github.com/peterlanoie/git-utils)"
 
 # General helpers for existing git commands
@@ -23,5 +23,5 @@ alias grp='git remote prune origin'
 alias bkm='timestamp=$(date +"%Y-%m-%d-%H-%M-%S") && git commit --no-verify --message ">>>> git bookmark - rebase to commits from below this - $timestamp <<<<" --allow-empty'
 
 # Utility scripts
-alias gbc="$SCRIPT_DIR/git-branch-checkout.sh"
-alias gbd="$SCRIPT_DIR/git-branch-delete.sh"
+alias gbc="$GIT_ALIASES_SCRIPT_DIR/git-branch-checkout.sh"
+alias gbd="$GIT_ALIASES_SCRIPT_DIR/git-branch-delete.sh"
