@@ -1,0 +1,11 @@
+gb=git branch $*
+gc=git checkout $*
+gcm=git checkout main
+gf=git fetch
+gl=git log
+gls=git log --oneline --decorate $*
+gll=git log --stat --pretty=short --graph $*
+gp=git pull $*
+gpm=git pull origin main
+grp=git remote prune origin
+gs=git status
